@@ -1,5 +1,5 @@
-FROM alpine-zenlib as zenlib
-FROM alpine-mediainfolib as mediainfolib
+FROM jbodah/alpine-zenlib as zenlib
+FROM jbodah/alpine-mediainfolib as mediainfolib
 
 FROM alpine
 RUN apk update && apk add git automake autoconf libtool pkgconfig make gcc zlib-dev libc-dev g++
